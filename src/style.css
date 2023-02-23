@@ -1,3 +1,35 @@
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+}
+
+h1 {
+  text-align: center;
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+form {
+  margin: 10px;
+}
+
+input {
+  width: 55vw;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.add-todo {
+  width: 25vw;
+  height: 49px;
+  padding: 10px;
+  margin-left: 3vw;
+  border: none;
+  border-radius: 8px;
 }
