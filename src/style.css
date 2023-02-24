@@ -33,3 +33,17 @@ input {
   border: none;
   border-radius: 8px;
 }
+
+#todo-list {
+  list-style: none;
+  color: #fff;
+}
+
+#todo-list > * {
+  display: flex;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
