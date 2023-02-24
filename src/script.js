@@ -49,23 +49,6 @@ todos.forEach(todo => {
   editButton.addEventListener('click', () => {
     // Handle edit button click
     console.log(`Editing todo with index ${todo.index}`);
-    const inputElement = document.createElement('input');
-    inputElement.type = 'text';
-    inputElement.value = todo.description;
-    inputElement.classList.add('description-input');
-    newTodoListElement.replaceChild(inputElement, descriptionElement);
-    inputElement.focus();
-
-    inputElement.addEventListener('keydown', event => {
-      if (event.keyCode === 13) {
-        // Update todo item and replace input element with description element
-        const updatedDescription = inputElement.value;
-        todo.description = updatedDescription;
-        const updatedDescriptionElement = document.createElement('p');
-        updatedDescriptionElement.textContent = updatedDescription;
-        newTodoListElement.replaceChild(updatedDescriptionElement, inputElement);
-      }
-    });
   });
 
   deleteButton.addEventListener('click', () => {
